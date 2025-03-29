@@ -5,10 +5,9 @@ import os
 
 # Variables
 FOLDER_NAME = 'data'
-DATA_FOLDER =  Path(__file__).parent.joinpath(FOLDER_NAME)
-FOLDER_NAME ='data'
+DATA_FOLDER =  Path(__file__).parent.parent.joinpath(FOLDER_NAME)
 DB_NAME = 'f1_analytics.db'
-DB_PATH = Path(__file__).parent.joinpath(FOLDER_NAME).joinpath(DB_NAME)
+DB_PATH = Path(__file__).parent.parent.joinpath(FOLDER_NAME).joinpath(DB_NAME)
 
 engine = create_engine(f'sqlite:///{DB_PATH}')
 

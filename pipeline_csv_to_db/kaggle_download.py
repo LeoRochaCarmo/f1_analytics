@@ -4,11 +4,8 @@ from pathlib import Path
 import shutil
 
 # Variables
-FOLDER_NAME = 'data'
-DIR_PATH =  Path(__file__).parent.joinpath(FOLDER_NAME)
 FOLDER_NAME ='data'
-DB_NAME = 'f1_analytics.db'
-DB_PATH = Path(__file__).parent.joinpath(FOLDER_NAME).joinpath(DB_NAME)
+DIR_PATH =  Path(__file__).parent.parent.joinpath(FOLDER_NAME)
 PATH = kagglehub.dataset_download("rohanrao/formula-1-world-championship-1950-2020")
 
 def moving_files():
